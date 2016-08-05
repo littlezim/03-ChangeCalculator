@@ -9,7 +9,7 @@ $(document).ready(function(){									//Begin function on ready
 		var dollar = Math.floor(amountReturn);					
 		//Round down the money back
 
-		var coins = Math.round((amountReturn % 1) * 100);		
+		var coins = Math.floor((amountReturn % 1) * 100);		
 		//Find the change and convert it into a whole number
 
 		var quarter = Math.floor(coins / 25);					
