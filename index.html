@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change Calculator</title>
+  <link rel="stylesheet" href="index.css">  
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+<!--		EXAMPLE OF BOOTSTRAP SET UPS		-->
+	<div class="container">
+		<div class ="row">
+			<div class="col-xs-12 col-sm-offset-4">
+				<h1> Change Calculator</h1>
+			</div>	
+		</div>
+
+<!-- Create rows/columns for inputs-->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 well">
+				<div class="col-xs-12 col-sm-6">
+					<label><strong>How Much is due for the sale?</strong></label>
+					<input id="amountDue" type="number" class ="form-control">
+				</div>
+
+				<div class="col-xs-12 col-sm-6">
+					<label>How much has the customer given you?</label>
+					<input id="amountPaid" type="number" class ="form-control">
+				</div>
+			</div>	
+		</div>		
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 well">
+					<div class="col-xs-12 col-sm-offset-5">
+						<label>Dollars</label><br>
+						<p id ="p"></p>
+					</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 well">
+				<div class ="col-xs-12 col-sm-3">
+					<label>Quarters</label><br>
+					<p1 id="p1"></p1>
+				</div>
+				
+				<div class ="col-xs-12 col-sm-3">
+					<label>Dimes</label><br>
+					<p2 id="p2"></p2>
+				</div>
+				
+				<div class ="col-xs-12 col-sm-3">
+					<label>Knickels</label><br>
+					<p3 id="p3"></p3>
+				</div>
+				
+				<div class ="col-xs-12 col-sm-3">
+					<label>Pennies</label><br>
+					<p4 id="p4"></p4>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-offset-5">
+				<p5 id="p5"></p5>
+			</div>
+		</div>
+
+		<div class="row">
+				<div class="col-xs-12 col-sm-offset-5">
+					<button id="btnCalculate" class="btn btn-primary">Calculate</button>
+				</div>
+		</div>
+				
+				<div id="output" class="output"></div>
+	</div>
+
+
+
+
+	</div>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
